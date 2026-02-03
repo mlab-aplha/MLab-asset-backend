@@ -44,3 +44,4 @@ coverage/
 # Misc
 *.tmp
 *.temp
+config/firebase-admin.json
