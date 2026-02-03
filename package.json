@@ -1,0 +1,39 @@
+{
+  "name": "mlab-asset-backend",
+  "version": "1.0.0",
+  "description": "Backend API for mLab Asset Management System",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["asset-management", "typescript", "firebase"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3",
+    "express-validator": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/morgan": "^1.9.4",
+    "@types/multer": "^1.4.7",
+    "@types/nodemailer": "^6.4.7",
+    "typescript": "^5.1.3",
+    "ts-node": "^10.9.1",
+    "nodemon": "^2.0.22"
+  }
+}
