@@ -13,12 +13,12 @@ import routes from './routes';
 // Load environment variables
 dotenv.config();
 
-console.log('🚀 Starting MLab Asset Management Backend...');
+console.log(' Starting MLab Asset Management Backend...');
 
 // Load Firebase key
 const keyPath = path.join(__dirname, '../config/firebase-admin.json');
 const serviceAccount = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
-console.log('✅ Firebase project:', serviceAccount.project_id);
+console.log(' Firebase project:', serviceAccount.project_id);
 
 // Initialize Firebase
 admin.initializeApp({
@@ -26,7 +26,7 @@ admin.initializeApp({
   databaseURL: "https://assets-magement.firebaseio.com"
 });
 
-console.log('✅ Firebase Admin initialized');
+console.log(' Firebase Admin initialized');
 
 // Get Firebase services
 const db = admin.firestore();
